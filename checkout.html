@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<!--Rorisang Manamela 21428574-->
+    <head>
+        <title>Checkout</title>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Rorisang Manamela"/>
+        <link rel="icon" href="media/images/logo/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css" />
+        
+    </head>
+
+    <body>
+        <!---------- Navigation---------->
+        <nav>
+            <ul id="navigation">
+                <li class="navigation"><a href="index.html" target="_blank">Home</a></li>
+                <li class="navigation"><a href="gameinfo.html" target="_blank">Game Info</a></li>
+                <li class="navigation"><a href="agents&abilities.html" target="_blank">Agents & Abilities</a></li>
+                <li class="navigation"><a href="weapons.html" target="_blank">Weapons</a></li>
+                <li class="navigation"><a href="maps.html" target="_blank">Maps</a></li>
+                <li class="navigation"><a href="gallery.html" target="_blank">Gallery</a></li>
+                <li class="navigation"><a href="merchandise.html" target="_blank">Merchandise</a></li>
+                <li class="navigation"><a href="about.html" target="_blank">About</a></li>
+            </ul>
+        </nav>
+
+        <!---------- Header---------->
+        <header>
+            <h1>Order</h1>
+        </header>
+
+        <!----------Article---------->
+        <article>
+            <p>Questions marked with * are required.</p>
+            <form action="results.html" method="post">
+                <fieldset>
+                    <legend> Delivery details</legend>
+                    <div class="form-field">
+                        <label> Street Address*:
+                            <input type="text" name="address" size="15" maxlength="30" required="required"/></label>
+                        <small></small></div>
+                            <br/>
+                    <div class="form-field">
+                        <label> Suburb*:
+                                <input type="text" name="suburb" size="15" maxlength="30" required="required"/></label>
+                                <small></small></div>
+                                <br/>
+                    <div class="form-field">
+                        <label> City*:
+                                <input type="text" name="city" size="15" maxlength="30" required="required"/></label>
+                                <small></small></div>
+                                <br/>
+                    <div class="form-field">
+                        <label> Province*:
+                                <input type="text" name="province" size="15" maxlength="30" required="required"/></label>
+                                <small></small></div>
+                                <br/>
+                    <div class="form-field">
+                        <label> Country*:
+                                <input type="text" name="country" size="15" maxlength="30" required="required"/></label>
+                                <small></small></div>
+                                <br/>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Recipient details </legend>
+                    <div class="form-field">
+                        <label> Name*:
+                        <input type="text" name="name" size="15" maxlength="30" required="required"/></label>
+                        <small></small></div>
+                        <br/>
+                    <div class="form-field">
+                        <label> Surname*:
+                        <input type="text" name="surname" size="15" maxlength="30" required="required"/></label>
+                        <small></small></div>
+                        <br/>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Payment details* </legend>
+                        <label> <input type="radio" name="cardtype" value="credit/debit" required="required"/> Credit or debit card </label>
+                        <br/>
+                        <label> <input type="radio" name="cardtype" value="InstantEFT"/> Instant EFT </label>
+                        <br/>
+                        <label> <input type="radio" name="cardtype" value="RegularEFT"/> Regular EFT </label>
+                        <br/>
+                        <label> <input type="radio" name="cardtype" value="PayPal"/> PayPal </label>
+                        <br/>
+                </fieldset>
+           
+                <fieldset>
+                    <legend> Complete your order </legend>
+                        <p>Reset the form</p>
+                        <input type="reset" name="reset" value="Reset the form"/>
+
+                        <br/>
+                        <p> Confirm and Pay </p>
+                        <input type="submit" name="submit" value="Checkout"/>
+                </fieldset>
+            </form>
+            <script src ="script.js"></script>
+        </article>
+    </body>
+</html>
